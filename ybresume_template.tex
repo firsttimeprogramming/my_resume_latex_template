@@ -1,0 +1,152 @@
+\documentclass{article}
+
+\UseRawInputEncoding
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=0.2in]{geometry}
+\usepackage[sharp]{easylist}% http://ctan.org/pkg/easylist
+
+% Environment-style definitions
+\newcommand{\bel}{\begin{easylist}[itemize]}
+\newcommand{\eel}{\end{easylist}}
+
+\renewcommand{\maketitle}
+{
+\begin{center}
+{\huge\bfseries
+\theauthor}
+
+\vspace{.25em}
+
+zyb0522@gmail.com
+
+Phone: 262-388-2696
+\end{center}
+}
+
+\titleformat{\section}
+{\huge\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\Large\bfseries \vspace{-3pt}}
+{$\bullet$}
+{0em}
+{}
+
+\titleformat{\subsubsection}
+{\bfseries\small}
+{$\circ$}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{0em}
+
+%********************
+\newcommand{\schoolitem}[4]{
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  #1   &      #2 \\
+  #3 &   #4 \\
+\end{tabular*}
+}
+
+\newcommand{\schoolDoubleItem}[2]{
+  {
+    {#1}{: #2 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\schoolSingleItem}[1]{
+  {
+    {#1}{\vspace{-1pt}}
+  }
+}
+
+%Macro-style definitions
+\makeatletter
+\newcommand{\el@aux}[1]{\begin{easylist}[itemize] #1 \end{easylist}\endgroup}
+\newcommand{\el}{\begingroup\Activate\el@aux}
+\makeatletter
+
+
+%********************
+
+\begin{document}
+
+\title{Resume}
+\author{Yubin Zheng}
+\maketitle
+%\schoolitem{1}{2}{3}{4}
+\section{Objective}
+{Seeking an entry-level backend web development/engineering or entry-level software development/engineering position or internship with existing skills while learning new skills and earning experiences}
+
+\section{Skills}
+
+\subsection{Programming Languages:}
+
+Java, C, C++, VB, QBasic, MIPS, TI-BASIC, Scala.
+
+\subsection{Scripting Languages:}
+
+{\LaTeX}, Python/Django, JavaScript.
+
+\subsection{Operate Microsoft Office:}
+
+Excel, Word, PowerPoint.
+
+\subsection{Operating System:}
+
+Windows, Linux OS, Unix OS.
+
+\subsection{Database:}
+
+MySQL, Oracle.
+
+\subsection{Agile Methodology:}
+
+Scrum.
+
+\subsection{Editing:}
+
+Photo-shop.
+
+\subsection{Currently Learning:}
+
+Artificial Intelligence, Cloud computing service and container: AWS (EC2), Docker, Maven.
+
+\section{Education}
+
+\schoolitem
+{UNIVERSITY OF WISCONSIN MILWAUKEE,}{Milwaukee, WI}
+{Computer Science Major, Bachelor degree}{Aug 2015 -- Dec 2019}
+
+\schoolDoubleItem{Cumulative GPA} {3.5-4.0}
+
+\schoolSingleItem{University Housing Honor}
+
+\schoolSingleItem{Dean list for six semesters}
+
+\schoolSingleItem{Able to work in U.S. legally without visa sponsorship.}
+
+\section{Course Project}
+
+\subsection{Web App for UWM {$\mid$} Mentored by Northwestern Mutual {$\mid$} Dec 2019 - Dec 2019}
+\begin{itemize}
+\item{Member of the backend team to design and implement database for graduate student progress tracking system and creating Restful APIs in Java using Spring Boot to create functional backend service.}
+\end{itemize}
+\vspace{.2cm}
+\subsection{Django ScavengerHunt web game}
+\begin{itemize}
+\item{Wrote Python unit test to debug defects in the web game.}
+\item{Used Scrum as software development methodology to develop the game.}
+\end{itemize}
+\vspace{.2cm}
+\subsection{Java game}
+\begin{itemize}
+\item{Implemented Dodge-ball game using linked list in Java.}
+\item{Implemented Light-Out game using tree structure in Java.}
+\end{itemize}
+\end{document}
